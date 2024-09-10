@@ -37,6 +37,7 @@ const TodoItem = ({ todos }) => {
         className="cursor-pointer w-7 h-12"
         checked={todos.checked}
         onChange={toggleCompleted}
+        disabled={isEditable}
       />
       <textarea
         type="text"
