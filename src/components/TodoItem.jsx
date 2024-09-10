@@ -41,7 +41,7 @@ const TodoItem = ({ todos }) => {
       />
       <textarea
         type="text"
-        className={`border-teal-950 border outline-none w-full bg-transparent rounded-lg px-2 ${todos.checked ? 'line-through' : ''} ${isEditable ? "bg-lime-100 border-amber-400" : ""} `}
+        className={` ${isEditable ? "bg-lime-100 border-amber-400" : ""} border-teal-950 border outline-none w-full bg-transparent rounded-lg px-2 ${todos.checked ? 'line-through' : ''}  `}
         value={editText}
         onChange={(e) => setEditText(e.target.value)}
         readOnly={!isEditable}
