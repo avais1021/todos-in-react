@@ -46,6 +46,7 @@ const TodoItem = ({ todos }) => {
         onChange={(e) => setEditText(e.target.value)}
         readOnly={!isEditable}
         ref={inputRef}
+        style={{ resize: 'none' }}
       />
       {/* Edit, Save Button */}
       <button
